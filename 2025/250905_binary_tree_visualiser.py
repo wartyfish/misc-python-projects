@@ -75,7 +75,7 @@ node_location = {}
 # Populates dictionary node_location:
 # Key = root depth (d); 
 # Value = dictionary of indices:
-    # Key = index (0 –> d^2 - 1)
+    # Key = index (0 –> 2^d - 1)
     # Value = node value
 # Tree structure:
 # d: i: 
