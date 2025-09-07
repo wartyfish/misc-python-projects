@@ -8,6 +8,8 @@ class Node:
 
 def tree_crawler(root):
     global tree
+    index_nodes(tree, 0, 0)
+    
     print(root.value)
     print_tree(tree, root.value)
     print("Current node: ", root.value)
@@ -17,10 +19,12 @@ def tree_crawler(root):
     print("1 to go left")
     print("2 to go right")
     print("3 to go up")
+    print("l to add left node")
+    print("r to add right node")
 
     cmd = input()
 
-    if cmd not in ["0", "1", "2", "3"]:
+    if cmd not in ["0", "1", "2", "3", "l", "r"]:
         print("Invalid input")
         # reload current node
         return tree_crawler(root)
@@ -48,7 +52,32 @@ def tree_crawler(root):
         print("This is the seed")
         return tree_crawler(root)
     
+    if cmd == "l":
+        if root.left_child == None:
+            node_value = int(input("Node: "))
+            branch_builder(node_value, root, "l")
+            return tree_crawler(root.left_child)
+        else:
+            y_or_n = input("Child already exists. Override? [y] or [n] ")
+            if y_or_n == "y":
+                node_value = int(input("Node: "))
+                root.left_child.value = node_value
+                return tree_crawler(root.left_child)
+
+    if cmd == "r":
+        if root.right_child == None:
+            node_value = int(input("Node: "))
+            branch_builder(node_value, root, "r")
+            return tree_crawler(root.right_child)
+        else:
+            y_or_n = input("Child already exists. Override? [y] or [n] ")
+            if y_or_n == "y":
+                node_value = int(input("Node: "))
+                root.right_child.value = node_value
+                return tree_crawler(root.right_child)
+
     return root.value
+
 
 def tree_depth(root: Node):
     if root is None:
@@ -105,36 +134,13 @@ def print_tree(root, selected: int = None):
                     print(f"{' '*(2**((d_max-d)-1)-1)}{' '*2**((d_max-d)-1)}{'  '}{' '*2**((d_max-d)-1)}{' '*(2**((d_max-d)-1)-1)}", end="")
         print()
 
-tree = Node(7)
 
-tree.left_child = Node(3, tree)
+def branch_builder(new_node: int, root: Node, left_or_right: str):
+    if left_or_right == "l":
+        root.left_child = Node(new_node, root)
+    if left_or_right == "r":
+        root.right_child = Node(new_node, root)
 
-tree.left_child.left_child = Node(2, tree.left_child)
-tree.left_child.right_child = Node(5, tree.left_child)
+tree = Node(int(input("Seed: ")))
 
-tree.left_child.left_child.left_child = Node(4, tree.left_child.left_child)
-tree.left_child.left_child.left_child.left_child = Node(19, tree.left_child.left_child.left_child)
-
-tree.left_child.right_child.right_child = Node(17, tree.left_child.right_child)
-
-tree.left_child.right_child.right_child.right_child = Node(10, tree.left_child.right_child.right_child)
-tree.left_child.right_child.right_child.right_child.right_child = Node(20, tree.left_child.right_child.right_child.right_child)
-
-
-tree.right_child = Node(11, tree)
-tree.right_child.left_child = Node(6, tree.right_child)
-tree.right_child.right_child = Node(14, tree.right_child)
-
-tree.right_child.left_child.left_child = Node(9, tree.right_child.left_child)
-tree.right_child.left_child.right_child = Node(1, tree.right_child.left_child)
-
-tree.right_child.left_child.left_child.left_child = Node(1, tree.right_child.left_child.left_child) 
-tree.right_child.left_child.left_child.left_child.left_child = Node(21, tree.right_child.left_child.left_child.left_child)
-tree.right_child.left_child.left_child.left_child.right_child = Node(24, tree.right_child.left_child.left_child.left_child)
-
-
-tree.right_child.right_child.left_child = Node(12, tree.right_child.right_child)
-tree.right_child.right_child.right_child = Node(16, tree.right_child.right_child)
-
-index_nodes(tree, 0, 0)
 tree_crawler(tree)
