@@ -1,0 +1,10 @@
+Name,Sessions played,Sessions booked,Sessions since last booking,Bookings per session played,Due to book?
+Dave,2,0,2,0.0,True
+Jess,2,0,2,0.0,True
+Paddy,2,0,2,0.0,
+Ruth,2,0,2,0.0,
+Oscar,1,0,1,0.0,
+Max,1,0,1,0.0,
+Gabe,2,1,1,0.5,
+Jamie,2,1,0,0.5,
+Aida,2,1,0,0.5,
