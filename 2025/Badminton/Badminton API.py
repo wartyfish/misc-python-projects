@@ -1,5 +1,6 @@
 import gspread
 from google.oauth2.service_account import Credentials
+import datetime
 
 scopes = [
     "https://www.googleapis.com/auth/spreadsheets",
@@ -47,27 +48,54 @@ class Player:
         self.time_since += 1
         self.sessions_played.append(date)
 
+def read_from_sheet():
+    data = sheet.get_all_values()
+    
+    # ['Date', 'Who booked?', 'Who played?']
+    headers = data[0][0:3]
+    rows = [value[0:3] for value in data[1:]]
 
+    #converts dd/mm/yyyy strings to date objects that can be sorted (reverse) chronologically
+    def parse_date(d):
+        try:
+            return datetime.datetime.strptime(d, "%d/%m/%y")
+        except ValueError:
+            return datetime.datetime.min
+    
+    rows.sort(key=lambda r: parse_date(r[0]), reverse=True)
+    rows = [row for row in rows if any(cell.strip() for cell in row)]
+
+    for row in rows:
+        print(row)
+    
+    # store parsed rows for later processing
+    # parse rows in chronological order (reverse order to how their stored in the "Log")
+    rows_reversed = rows[::-1]
+    
+    for row in rows_reversed:
+        parse_line({'Date': row[0], 'Who booked?': row[1], 'Who played?': row[2]})    
+  
+    return headers, rows
+
+# receives each line as a dictionary:
+# line['Date'] = [date]
+# line['Who booked?'] = ['p1', 'p2']
+# line['Who played?'] = ['p1', 'p2'... 'p8']
 def parse_line(line):
     date = line['Date']
     sessions[date] = {}
     sessions[date]['booked'] = [name.strip() for name in line['Who booked?'].split(",")]
     sessions[date]['played'] = [name.strip() for name in line['Who played?'].split(",")]
+    sessions[date]['not booked'] = False
 
-    # If "Who booked?" value empty, assume session has not yet commenced.
-    # Do not update player objects. Instead, inform user who is next to book. 
+    # If "Who booked?" value empty and "Who played?" not empty:
+    # Do not update player objects. Instead, denote session as not booked
     if sessions[date]['booked'][0] == '':
-        sorted_players = sorted(
-            players.values(), 
-            key = lambda p: (p.time_since, -1 * p.times_booked), 
-            reverse = True
-        )
-
-        eligable = [p for p in sorted_players if p.name in sessions[date]['played']][:2]
-
-        for player in eligable:
-            player.due_to_book = "Yes"
-            print(player.name,"due to book")
+        if sessions[date]['played'][0] != '':
+            sessions[date]['not booked'] = True
+            for name in sessions[date]['played']:
+                if name not in players:
+                    players[name] = Player(name)
 
     else:
         for name in sessions[date]['played']:
@@ -75,35 +103,41 @@ def parse_line(line):
                 players[name] = Player(name)
 
             players[name].played(date)
-            print(players[name].name, "played on",date)
         
         for name in sessions[date]['booked']:
             players[name].booked(date)
-    
-def print_players():
-    for player in sorted(players.values(), key=lambda p: (p.time_since, -1 * p.times_booked), reverse=True):
-        print(player)
 
-def plan_session(list_of_players: list):
-    ordered_names = []
-    for player in list_of_players:
-        if player not in players:
-            players[player] = Player(player)
-            
-    for player in sorted(players.values(), key=lambda p: (p.time_since, -1 * p.times_booked), reverse=True):
-        if player.name in list_of_players:
-            ordered_names.append(player)
+# updates table in log sheet
+# entries sorted reverse chronologically, with an empty row below headers
+def update_log_sheet(headers, rows):
+    num_rows = len(rows) + 2 #+1 for blank row
+    num_cols = len(headers)
 
-    for p in ordered_names:
-        print(p)
-            
-def read_from_sheet():
-    rows = sheet.get_all_records()
-    for row in rows:
-        parse_line(row)
+    # Clear table range.
+    # chr() converts int to unicode character
+    # ASCII code 65 is 'A', so 64 + num_cols converts number to letter of row in spreadsheet
+    # ie chr(65) = 'A', chr(66) = 'B', etc...
+    sheet.batch_clear([f"A2:{chr(64 + num_cols)}{num_rows+10}"])
 
-def write_to_sheets():
+    # Write data starting as A2
+    sheet.update(values=rows, range_name="A3")
+
+def update_processed_sheet():
     players_formatted = []
+
+    for date in sessions:
+        if sessions[date]['not booked'] == True:
+            players_in_booking_session = sessions[date]['played']
+            sorted_players = sorted(
+                players.values(), 
+                key = lambda p: (p.time_since, -1 * p.times_booked), 
+                reverse = True
+            )
+
+            eligable = [p for p in sorted_players if p.name in players_in_booking_session][:2]
+
+            for player in eligable:
+                player.due_to_book = "Yes"
 
     for player in sorted(players.values(), key=lambda p: (p.time_since, -1 * p.bookings_per_session), reverse=True):
         players_formatted.append([player.name, player.times_played, player.times_booked, player.time_since, round(player.bookings_per_session, 2), player.due_to_book])
@@ -114,9 +148,7 @@ def write_to_sheets():
                     [line for line in players_formatted])
     print("Data written successfully")
 
-#print_players()
-#output_data()
+headers, rows = read_from_sheet()
+update_log_sheet(headers, rows)
+update_processed_sheet()
 
-read_from_sheet()
-
-write_to_sheets()
