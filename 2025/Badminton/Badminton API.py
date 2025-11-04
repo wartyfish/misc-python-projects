@@ -64,9 +64,6 @@ def read_from_sheet():
     
     rows.sort(key=lambda r: parse_date(r[0]), reverse=True)
     rows = [row for row in rows if any(cell.strip() for cell in row)]
-
-    for row in rows:
-        print(row)
     
     # store parsed rows for later processing
     # parse rows in chronological order (reverse order to how their stored in the "Log")
@@ -151,4 +148,6 @@ def update_processed_sheet():
 headers, rows = read_from_sheet()
 update_log_sheet(headers, rows)
 update_processed_sheet()
+
+print(rows)
 
