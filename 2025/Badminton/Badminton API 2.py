@@ -7,7 +7,7 @@ scopes = [
     "https://www.googleapis.com/auth/drive"
 ]
 
-creds = Credentials.from_service_account_file("credentials.json", scopes=scopes)
+creds = Credentials.from_service_account_file(r"C:\Users\Eem\Documents\API_credentials\badminton_credentials.json", scopes=scopes)
 client = gspread.authorize(creds)
 
 sheet = client.open("Badminton Session Log").worksheet("Log")
@@ -171,8 +171,8 @@ def update_log_sheet():
     for session in sessions_sorted:
         rows.append(
             [session.date, 
-            ", ".join([p.name for p in session.who_booked]), 
-            ", ".join([p.name for p in session.who_played])]
+            ", ".join(sorted([p.name for p in session.who_booked])), 
+            ", ".join(sorted([p.name for p in session.who_played]))]
         )  
 
     # Write data starting at A3
