@@ -175,8 +175,12 @@ def update_log_sheet():
             ", ".join(sorted([p.name for p in session.who_played]))]
         )  
 
-    # Write data starting at A3
-    sheet.update(values=rows, range_name="A3")
+    # If no one yet booked, write data from A2
+    if len(sessions_sorted[0].who_booked) == 0:
+        sheet.update(values=rows, range_name="A2")
+    # Otherwise, write data A3
+    else:
+        sheet.update(values=rows, range_name="A3")
 
 def update_processed_sheet():
     # Clear table range
