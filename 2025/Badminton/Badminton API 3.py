@@ -64,8 +64,8 @@ class Session:
             self.date_time = datetime.datetime.min
         
         self.who_booked = who_booked if who_booked is not None else []
-
         self.who_played = who_played
+
 
     def __str__(self):
         if len(self.who_booked) == 0:
@@ -88,10 +88,27 @@ sessions = []
 # stores player-type objects, key = name
 players = []
 
+def new_session(date: str, played_names: list, booked_names: list=None):
+    if booked_names == None:
+        booked_names = []
+    # create player object for any new players
+    for player in played_names:
+        if player not in [p.name for p in players]:
+            players.append(Player(player))
+
+    played = [player for player in players if player.name in played_names]    
+
+    for player in booked_names:
+        if player not in [p.name for p in players]:
+            players.append(Player(player))
+    
+    booked = [player for player in players if player.name in booked_names]
+
+    sessions.append(Session(date, played, booked))
 
 # pulls table data from "Log" sheet
 # extracts headers as and each row as a list
-# hands row data to pase_data method for further processing 
+# hands row data to pase_data method for further processing  
 # and returns header and rows
 def read_from_sheet():
     data = sheet.get_all_values()
@@ -103,27 +120,18 @@ def read_from_sheet():
     # strips any empty rows
     rows = [row for row in rows if any(cell.strip() for cell in row)]
 
-    # create new Player-objects, and add them to the list
-    # create lists of Player-objects who played and who booked (if applicable)
-    # and pass them to session-object with the session's date
+    # Extracts the date, and the names of the players who played and who booked (if applicable)
+    # Passes these to new_session method which converts players to Player objects 
+    # and appends new Session object to sessions
     for row in rows:
+        date = row[0]
         played_names = row[2].split(", ")
-        for player in played_names:
-            if player not in [p.name for p in players]:
-                players.append(Player(player))
-        played = [player for player in players if player.name in played_names]
 
         if row[1].strip() == "":
-            sessions.append(Session(row[0], played))
-        
+            new_session(date, played_names)
         else:
             booked_names = row[1].split(", ")
-            for player in booked_names:
-                if player not in [p.name for p in players]:
-                    players.append(Player(player))
-            booked = [player for player in players if player.name in booked_names]
-            
-            sessions.append(Session(row[0], played, booked))
+            new_session(date, played_names, booked_names)
 
     # sort session chronologically to process players
     for session in sorted(
@@ -207,27 +215,48 @@ def update_processed_sheet(rows: list):
     
     processed.update(values=rows, range_name="A2")
 
-def print_rows(rows: list):
-    print(f"Date{" "*4}| Booked{" "*8}| Played")
-    for row in rows[1]:
-        print(f"{row[0]}|{row[1]:15}|{row[2]}")
-    print()
+def print_rows():
+    print(f"Date{" "*4}|Booked{" "*9}|Played")
+
+    for session in sessions:
+        who_booked = ", ".join(player.name for player in session.who_booked)
+        who_played = ", ".join(player.name for player in session.who_played)
+
+        print(f"{session.date}|{who_booked:15}|{who_played}")
 
 def print_processed(rows: list):
-    print(f"Name{" "*6}| Sessions played | Sessions booked | Sessions since last booking | Bookings per session | Due to book?")
-    print(f"{" "*10}|{"Sessions".center(15)}|{"Sessions since".center(15)}|{"Sessions since".center(15)}|{"Bookings per".center(15)}|{"Due to".center(10)}")
-    print(f"{"Name".center(10)}|{"booked".center(15)}|{"last booking".center(15)}|{"last booking".center(15)}|{"session".center(15)}|{"book?".center(10)}")
+    print(f"{" "*10}|{"Sessions".center(15)}|{"Sessions".center(15)}|{"Sessions since".center(15)}|{"Bookings per".center(15)}|{"Due to".center(10)}")
+    print(f"{"Name".center(10)}|{"played".center(15)}|{"booked ".center(15)}|{"last booking".center(15)}|{"session".center(15)}|{"book?".center(10)}")
 
     for row in rows:
-        print(f"{row[0]:10}",end="")
-        print(f"{row[1]:15} ",end="")
-        print(f"{row[2]:15} ",end="")
-        print(f"{row[3]:15} ",end="")
-        print(f"{row[4]:15} ",end="")
-        print(f"{row[5]:>9}")
+        print(f"{row[0]:9} |",end="")
+        print(f"{row[1]:14} |",end="")
+        print(f"{row[2]:14} |",end="")
+        print(f"{row[3]:14} |",end="")
+        print(f"{row[4]:14} |",end="")
+        print(f"{row[5]:>9} ")
 
 
-print_rows(read_from_sheet())
-print_processed(build_processed_sheet())
+def input_new_session():
+    new_date = input("Date (dd/mm/yy): ")
+    who_played = input("Who played? (Comma seperated)")
+    who_booked = input("Who booked? (Comma seperated)")
+    
+    try:
+        who_played = who_played.split(", ")
+    except: 
+        who_played = [who_played]
+    if len(who_booked) > 0:
+        try:
+            who_booked = who_booked.split(", ")
+        except:
+            who_booked = [who_booked]
+
+    
+read_from_sheet()
+print_rows()
+
+#print_rows(read_from_sheet())
+#print_processed(build_processed_sheet())
 # update_log_sheet()
 # update_processed_sheet()
