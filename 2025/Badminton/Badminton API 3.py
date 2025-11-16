@@ -61,9 +61,10 @@ class Session:
         try:
             self.date_datetime = datetime.datetime.strptime(self.date, "%d/%m/%y")
         except ValueError:
+            print("ValueError: failed to assign datetime")
             self.date_time = datetime.datetime.min
         
-        self.who_booked = who_booked if who_booked is not None else []
+        self.who_booked = who_booked if who_booked is not None else [""]
         self.who_played = who_played
 
 
@@ -88,24 +89,6 @@ sessions = []
 # stores player-type objects, key = name
 players = []
 
-def new_session(date: str, played_names: list, booked_names: list=None):
-    if booked_names == None:
-        booked_names = []
-    # create player object for any new players
-    for player in played_names:
-        if player not in [p.name for p in players]:
-            players.append(Player(player))
-
-    played = [player for player in players if player.name in played_names]    
-
-    for player in booked_names:
-        if player not in [p.name for p in players]:
-            players.append(Player(player))
-    
-    booked = [player for player in players if player.name in booked_names]
-
-    sessions.append(Session(date, played, booked))
-
 # pulls table data from "Log" sheet
 # extracts headers as and each row as a list
 # hands row data to pase_data method for further processing  
@@ -128,42 +111,64 @@ def read_from_sheet():
         played_names = row[2].split(", ")
 
         if row[1].strip() == "":
-            new_session(date, played_names)
+            create_new_session(date, played_names)
         else:
             booked_names = row[1].split(", ")
-            new_session(date, played_names, booked_names)
-
-    # sort session chronologically to process players
+            create_new_session(date, played_names, booked_names)
+    
     for session in sorted(
         sessions,
         key = lambda s: s.date_datetime
     ):
-        # check if anyone is booking, and if not, find two players who are next to book
-        if len(session.who_booked) == 0:
-            to_book = [
-                player for player in sorted(
-                    session.who_played,
-                    key = lambda p: (-1 * p.time_since, p.bookings_per_session)
-                )
-            ][:2]
-            for player in to_book:
-                player.due_to_book = "yes"
-        
-        # if player(s) have already booked, proceed as normal
-        else:
-            for player in session.who_played:
-                player.times_played += 1
-                if player.time_since == -1:
-                    player.time_since += 1
+        update_player_attributes(session)
+
+def create_new_session(date: str, played_names: list, booked_names: list=None):
+    if booked_names == None:
+        booked_names = []
+    # create player object for any new players
+    for player in played_names:
+        if player not in [p.name for p in players]:
+            players.append(Player(player))
+
+    played = [player for player in players if player.name in played_names]    
+
+    for player in booked_names:
+        if player not in [p.name for p in players]:
+            players.append(Player(player))
+    
+    booked = [player for player in players if player.name in booked_names]
+    if booked == None:
+        booked = [""]
+
+    new_session = Session(date, played, booked)
+    sessions.append(new_session)
+    return new_session        
+    
+def update_player_attributes(session: Session):
+    # check if anyone is booking, and if not, find two players who are next to book
+    if len(session.who_booked) == 0:
+        to_book = [
+            player for player in sorted(
+                session.who_played,
+                key = lambda p: (-1 * p.time_since, p.bookings_per_session)
+            )
+        ][:2]
+        for player in to_book:
+            player.due_to_book = "yes"
+    
+    # if player(s) have already booked, proceed as normal
+    else:
+        for player in session.who_played:
+            player.times_played += 1
+            if player.time_since == -1:
                 player.time_since += 1
-                player.sessions_played.append(session.date) # this list is currently not being used
-            
-            for player in session.who_booked:
-                player.time_since = 0
-                player.times_booked += 1
-                player.sessions_booked.append(session.date) # this list is also unused        
-                
-    return headers, rows
+            player.time_since += 1
+            player.sessions_played.append(session.date) # this list is currently not being used
+        
+        for player in session.who_booked:
+            player.time_since = 0
+            player.times_booked += 1
+            player.sessions_booked.append(session.date) # this list is also unused  
 
 def update_log_sheet():
     # Clear table range
@@ -207,18 +212,23 @@ def build_processed_sheet():
                 player.due_to_book
             ]
         )
+    
+    print_processed(rows)
     return rows
 
 def update_processed_sheet(rows: list):
     # Clear table range
-    processed.batch_clear([f"A2:F"])
-    
+    processed.batch_clear([f"A2:F"])    
     processed.update(values=rows, range_name="A2")
 
 def print_rows():
     print(f"Date{" "*4}|Booked{" "*9}|Played")
 
-    for session in sessions:
+    for session in sorted(
+        sessions,
+        key=lambda p: p.date_datetime,
+        reverse=True
+    ):
         who_booked = ", ".join(player.name for player in session.who_booked)
         who_played = ", ".join(player.name for player in session.who_played)
 
@@ -236,11 +246,10 @@ def print_processed(rows: list):
         print(f"{row[4]:14} |",end="")
         print(f"{row[5]:>9} ")
 
-
 def input_new_session():
-    new_date = input("Date (dd/mm/yy): ")
-    who_played = input("Who played? (Comma seperated)")
-    who_booked = input("Who booked? (Comma seperated)")
+    date = input("Date (dd/mm/yy): ")
+    who_played = input("Who played? (Comma seperated) ") 
+    who_booked = input("Who booked? (Comma seperated) ")
     
     try:
         who_played = who_played.split(", ")
@@ -251,10 +260,24 @@ def input_new_session():
             who_booked = who_booked.split(", ")
         except:
             who_booked = [who_booked]
-
+    else:
+        who_booked = []
     
+    new_session = create_new_session(date, who_played, who_booked)
+    update_player_attributes(new_session)
+    
+    print("New session added.")
+    print()
+    print_rows()
+
+
 read_from_sheet()
 print_rows()
+build_processed_sheet()
+print()
+input_new_session()
+build_processed_sheet()
+
 
 #print_rows(read_from_sheet())
 #print_processed(build_processed_sheet())
