@@ -213,12 +213,13 @@ def build_processed_sheet():
             ]
         )
     
-    print_processed(rows)
+    #print_processed(rows)
     return rows
 
-def update_processed_sheet(rows: list):
+def update_processed_sheet():
     # Clear table range
-    processed.batch_clear([f"A2:F"])    
+    processed.batch_clear([f"A2:F"])   
+    rows = build_processed_sheet() 
     processed.update(values=rows, range_name="A2")
 
 def print_rows():
@@ -277,9 +278,17 @@ build_processed_sheet()
 print()
 input_new_session()
 build_processed_sheet()
+print()
+if input("Update spreadsheet? [y/n] ").lower() == "y":
+    print()
+    update_log_sheet()
+    print("Log sheets updated successfully")
+    update_processed_sheet()
+    print("Processed sheet updated successfully")
+
 
 
 #print_rows(read_from_sheet())
 #print_processed(build_processed_sheet())
 # update_log_sheet()
-# update_processed_sheet()
+# update_processed_sheet()  
