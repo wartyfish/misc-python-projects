@@ -1,0 +1,301 @@
+Rank	Name			DOB	DOD	Nation	Greatest Achievement
+1 	Temujin/Genghiz Khan 	1162 	1227 	Mongol 	Khwarezmian Empire, 1221
+2 	Alexander III "the Great" 	356BC 	323BC 	Macedon 	Gaugamela, 331 BC
+3 	Napoleon Bonaparte 	1769 	1821 	France 	Ulm/Austerlitz, 1805
+4 	Hannibal Barca 	247BC 	183BC 	Carthage 	Cannae, 216 BC
+5 	Julius Caesar 	100BC 	44BC 	Rome 	Alesia, 52 BC
+6 	Khalid ibn al-Walid 	584 	642 	Arab/Rashidun Caliphate 	Yarmouk, 636
+7 	Subutai 	1175 	1248 	Mongol 	Legnica-Mohi, 1241
+8 	Publius Cornelius Scipio "Scipio Africanus" 	236BC 	183BC 	Rome 	Ilipa, 206 BC
+9 	Frederick II "the Great" 	1712 	1780 	Prussia 	Leuthen, 1757
+10 	Gustav II Adolf (Gustavus Adolphus) 	1591 	1632 	Sweden 	Breitenfeld, 1631
+11 	John Churchill, 1st Duke of Marlborough 	1650 	1722 	Great Britain 	Blenheim, 1704
+12 	Belisarius 	505 	565 	Byzantine 	Dara, 530
+13 	Jan Zizka 	1370 	1424 	Bohemian/Hussite 	Kutna Hora, 1421
+14 	Philip II 	382BC 	336BC 	Macedon 	Chaeronea, 338 BC
+15 	Oda Nobunaga 	1534 	1582 	Japan (Sengoku) 	Nagashino, 1575
+16 	Cyrus "the Great" 	590BC 	529BC 	Persia (Achaemenid) 	Thymbra, 546 BC
+17 	Alexander Suvorov 	1729 	1800 	Russia 	Rymnik, 1789
+18 	Arthur Wellesley, 1st Duke of Wellington 	1769 	1852 	Great Britain 	Salamanca, 1812
+19 	Han Xin (Han Hsin) 	N/A 	196BC 	China (Han Dynasty) 	Jingxing, 206 BC
+20 	Timur (Tamerlane) 	1336 	1405 	Turco-Mongol 	Ankara, 1402
+21 	Heraclius 	575 	641 	Byzantine 	Nineveh, 627
+22 	Henri de la Tour d'Auvergne, Vicomte de Turenne 	1611 	1675 	France 	Upper Rhine, 1674-1675
+23 	Nader Shah 	1688 	1747 	Persia (Afsharid) 	Karnal, 1739
+24 	Eugene of Savoy 	1663 	1736 	Austria 	Zenta, 1697
+25 	Helmuth Bernhard von Moltke "Moltke the Elder" 	1800 	1891 	Prussia 	Sedan, 1870
+26 	Chandragupta Maurya 	340BC 	298BC 	India (Maurya) 	Pataliputra, 322 BC
+27 	Tiglath-Pileser III 	N/A 	727BC 	Assyria 	Babylonia, 745 BC
+28 	Toyotomi Hideyoshi 	1536 	1598 	Japan (Sengoku) 	Shizugatake, 1583
+29 	Gonzalo Fernandez de Cordoba “El Gran Capitan” 	1453 	1515 	Spain 	Cerignola, 1503
+30 	Maurice de Saxe, Count of Saxony 	1696 	1750 	France 	Fontenoy, 1745
+31 	Georgy Konstantinovich Zhukov 	1896 	1973 	Russia/Soviet Union 	Moscow, 1941
+32 	Selim I 	1470 	1520 	Ottoman 	Marj Dabiq, 1517
+33 	Shivaji Bhonsle (Chhatrapati Shivaji Maharaj) 	1627 	1680 	Marathas 	Pratapgarh, 1659
+34 	Sun Tzu 	544BC 	496BC 	China (Spring & Autumn Period) 	Art of War, written 490 BC (?)
+35 	Epaminondas 	418BC 	362BC 	Thebes 	Leuctra, 371 BC
+36 	Shaka 	1787 	1828 	Zulu 	Ghoxli Hill, 1818
+37 	Robert Edward Lee 	1807 	1870 	USA (Confederate) 	Chancellorsville, 1863
+38 	Erich von Manstein 	1887 	1973 	German 	3rd Kharkov, 1943
+39 	Babur (Zahir-ud-Din Muhammad) 	1483 	1530 	Mughal 	1st Panipat, 1526
+40 	Tran Hung Dao 	1228 	1300 	Vietnam (Dai Viet) 	Bach Dang, 1288
+41 	Gaius Marius 	157BC 	86BC 	Rome (Populares) 	Vercellae, 101 BC
+42 	John III Sobieski 	1629 	1696 	Poland-Lithuania 	Vienna, 1683
+43 	Guo Ziyi 	697 	781 	China (Tang Dynasty) 	Xiyuan, 765
+44 	Maurice of Nassau, Prince of Orange 	1567 	1625 	Dutch 	Nieuwpoort, 1600
+45 	Louis II de Bourbon, Prince of Conde 	1621 	1688 	France 	Rocroi, 1643
+46 	Thutmose III 	N/A 	1479BC 	Egypt (New Kingdom) 	Megiddo, 1457 BC
+47 	Charles XII (Carolus Rex) 	1682 	1718 	Sweden 	Narva, 1701
+48 	Bai Qi 	N/A 	257BC 	China (Warring States - Qin) 	Changping, 257 BC
+49 	Heinz Guderian 	1880 	1954 	Germany 	Smolensk, 1941
+50 	Nurhaci 	1559 	1626 	Manchu 	Sarhu, 1619
+51 	Yue Fei 	1103 	1142 	China (Song Dynasty) 	Yancheng, 1140
+52 	George Castriot “Skanderbeg” 	1405 	1468 	Albania 	2nd Kruge, 1466-1467
+53 	Stanislaw Koniecpolski 	1590 	1646 	Poland-Lithuania 	Ochmatow, 1644
+54 	Lucius Cornelius Sulla 	138BC 	78BC 	Rome (Optimates) 	Orchomenus, 88 BC
+55 	Vo Nguyen Giap 	1911 	2013 	Vietnam 	Dien Bien Phu, 1954
+56 	Winfield Scott 	1786 	1866 	USA 	Mexico City, 1847
+57 	Bayinnaung Kyawhtin Nawrahta 	1516 	1581 	Burma 	Naungyo, 1538
+58 	Ulysses S. Grant 	1822 	1885 	USA (Union) 	Vicksburg, 1863
+59 	Stephen III “the Great” (Stefan cel Mare) 	1433 	1504 	Moldavia 	Vaslui, 1471
+60 	Li Jing 	571 	649 	China (Tang Dynasty) 	Eastern Tujue, 630
+61 	Baji Rao I 	1700 	1740 	Marathas 	Palkhed, 1728
+62 	Louis Nicholas Davout 	1770 	1823 	France 	Auerstadt, 1806
+63 	Simeon I "the Great" 	864 	927 	Bulgaria 	Achelous, 917
+64 	Paul Emil von Lettow-Vorbeck 	1870 	1964 	Germany 	Tanga, 1914
+65 	Jebe "the Arrow" 	N/A 	1223 	Mongol 	Kalka River, 1223
+66 	Charlemagne (Karolus Magnus) 	748 	814 	Franks 	Pavia, 773-774
+67 	Alexander Vasilevsky 	1895 	1977 	Russia/Soviet Union 	Stalingrad, 1942
+68 	Narses 	478 	573 	Byzantine 	Taginae, 552
+69 	Li Shi-Min (Taizong Emperor) 	599 	649 	China (Tang Dynasty) 	Hulao, 621
+70 	Aurelian (Lucius Domitius Aurelianus) 	214 	275 	Rome 	Emesa, 272
+71 	Charles Martel 	688 	741 	Franks 	Tours, 732
+72 	Takeda Shingen 	1521 	1573 	Japan (Sengoku) 	Mikatagahara, 1573
+73 	Baibars 	1223 	1277 	Egypt (Mamluk) 	Ain Jalut, 1260
+74 	Alessandro Farnese, Duke of Parma 	1545 	1592 	Spain 	Antwerp, 1584-1585
+75 	Mehmed II “the Conqueror” 	1432 	1481 	Ottoman 	Constantinople, 1453
+76 	Samudragupta 	335 	375 	India (Gupta) 	Southern Expedition, 360?
+77 	Xiang Yu 	232BC 	202BC 	China (Qin Dynasty/Western Chu) 	Julu, 207 BC
+78 	Constantine I “The Great” 	272 	337 	Rome 	Milvian Bridge, 312
+79 	Sargon 	N/A 	2279BC 	Akkad 	Uruk, 2290? BC
+80 	Edward I 	1239 	1307 	England 	Evesham, 1265
+81 	George Washington 	1732 	1799 	USA 	Yorktown, 1781
+82 	James Graham, 1st Marquess of Montrose 	1612 	1650 	Scotland (Royalist) 	Auldearn, 1645
+83 	‘Amr ibn al-‘As 	583 	664 	Arab/Rashidun Caliphate 	Heliopolis, 640
+84 	Francois-Henri de Montmorency-Bouteville, duc de Luxembourg 	1628 	1695 	France 	Neerwinden, 1693
+85 	Ban Chao (Pan Ch’ao) 	32 	102 	China (Han Dynasty) 	Invasion of the Kushans/Yuezhi, 90
+86 	Raimondo Montecuccoli 	1609 	1680 	Austria 	St. Gotthard, 1664
+87 	William I “the Conqueror” 	1027 	1087 	Norman/England 	Hastings, 1066
+88 	Mustafa Kemal “Ataturk” 	1881 	1938 	Turkey 	Sakarya, 1923
+89 	Claude Louis Hector de Villars 	1653 	1734 	France 	Denain, 1712
+90 	Dwight D. Eisenhower 	1890 	1969 	USA 	Normandy, 1944
+91 	Lautaro 	N/A 	1557 	Mapuche 	Tucapel, 1553
+92 	Nikephoros II Phokas 	912 	969 	Byzantine 	Aleppo, 962
+93 	Oliver Cromwell 	1599 	1658 	England (Parliamentarian) 	Dunbar, 1650
+94 	Cao Cao 	155 	220 	China (Three Kingdoms-Cao Wei) 	Guandu, 200
+95 	Erwin Rommel 	1891 	1944 	Germany 	Gazala, 1942
+96 	Albrecht Eusebius Wenzel von Wallenstein 	1583 	1634 	Bohemia/Austria 	Wolgast, 1628
+97 	Robert Clive “Clive of India” 	1723 	1773 	Great Britain 	Plassey, 1757
+98 	Ranjit Singh 	1780 	1839 	Sikh 	Nowshera, 1823
+99 	Moshe Dayan 	1915 	1981 	Israeli 	Six-Day War, 1967
+100 	Mahmud of Ghazni 	971 	1030 	Turco-Persian/Ghaznavid 	Peshawar, 1002
+101 	Basil II “Bulgar-Slayer” 	958 	1025 	Byzantine 	Kleidon, 1014
+102 	Mao Zedong 	1893 	1976 	China (Communist/PRC) 	Long March, 1934-1935
+103 	Trajan 	53 	117 	Rome 	Parthian Campaign, 115-117
+104 	Suleiman I 	1494 	1566 	Ottoman 	Mohacs, 1526
+105 	Robert Guiscard de Hauteville 	1015 	1085 	Norman 	Dyrrhachium, 1081
+106 	Wanyan Aguda (Taizu of Jin) 	1068 	1123 	Jurchen/China (Jin Dynasty) 	Hubudabang, 1115
+107 	William Slim, 1st Viscount Slim 	1891 	1970 	Great Britain 	Meiktila-Mandalay, 1945
+108 	Thomas J. Jackson “Stonewall” 	1824 	1863 	USA (Confederate) 	Shenandoah Valley, 1862
+109 	Sher Shah Suri (Farid Khan) 	1486 	1545 	Mughal/Afghan 	Kannauj, 1540
+110 	Carl Gustav Emil Mannerheim 	1867 	1951 	Finland 	Winter War, 1939-1940
+111 	Shapur I 	N/A 	272 	Persian (Sasanian) 	Edessa, 260
+112 	Janos Hunyadi 	1406 	1456 	Hungarian 	Belgrade, 1456
+113 	George S. Patton 	1885 	1945 	USA 	Ardennes, 1944
+114 	Raja Raja Chola I 	N/A 	1014 	Tamil (Chola Dynasty) 	Anuradhapura, 993
+115 	Edmund Allenby, 1st Viscount Allenby 	1861 	1936 	Great Britain 	Megiddo, 1918
+116 	Hernan Cortes 	1485 	1547 	Spain 	Tenochtitlan, 1521
+117 	Pyrrhus 	319BC 	272BC 	Epirus 	Heraclea, 280 BC
+118 	Zhu Yuanzhang (Hongwu Emperor) 	1328 	1398 	China (Ming Dynasty) 	Lake Poyang, 1363
+119 	Ahmad Shah Durrani (Ahmad Khan Abdali) 	1722 	1772 	Afghanistan 	Panipat III, 1761
+120 	Muhammad bin Dawud Chaghri (Alp Arslan) 	1029 	1072 	Turks (Seljuks) 	Manzikert, 1071
+121 	Nguyen Hue (Quang Trung) 	1753 	1792 	Vietnam 	Ngoc Hoi-Dong Da, 1788-1789
+122 	Henry V 	1387 	1422 	England 	Agincourt, 1415
+123 	Pachacuti Inca Yupanqui 	N/A 	1471 	Inca 	Cuzco, 1433?
+124 	Leo III the Isaurian 	675 	741 	Byzantine 	Constantinople, 717-718
+125 	Andre Massena 	1758 	1817 	France 	Zurich II, 1799
+126 	Sun Bin 	N/A 	316 BC 	China (Warring States - Qi) 	Maling, 342 BC
+127 	Philopoemen 	253BC 	183BC 	Greece (Achaean League) 	Mantinea, 207 BC
+128 	Robert I “the Bruce” 	1274 	1329 	Scotland 	Bannockburn, 1314
+129 	Huo Qubing 	140BC 	117BC 	China (Han Dynasty) 	Expedition to Lake Baikal, 119 BC
+130 	Sonni Ali (Ali Kolon) 	N/A 	1492 	Songhai 	Timbuktu, 1468
+131 	Erich Ludendorff 	1865 	1937 	Germany 	Western Front, 1917
+132 	Hamilcar Barca 	275BC 	228BC 	Carthage 	The Saw, 238 BC
+133 	Tokugawa Ieyasu 	1543 	1616 	Japan (Sengoku) 	Sekigahara, 1600
+134 	Rodrigo Diaz de Vivar “El Cid” 	1043 	1099 	Spain 	Tebar, 1090
+135 	Suppiluliuma I 	N/A 	1322BC 	Hittite 	Great Syrian Campaign, 1340? BC
+136 	Pulakeshin II 	597 	642 	India (Chalukyas) 	Narmada River, 619
+137 	Flavius Stilicho 	359 	408 	Rome 	Pollentia, 402
+138 	Saladin 	1137 	1193 	Egypt (Ayyubid)/Kurdish 	Hattin, 1187
+139 	Christiaan de Wet 	1854 	1922 	Boer 	Guerrilla Campaign, 1900-1902
+140 	Yusuf ibn Tashfin 	1061 	1106 	Morocco (Almoravids) 	Sagrajas, 1086
+141 	Murad IV 	1612 	1640 	Ottoman 	Baghdad, 1638
+142 	Sebastien Le Prestre de Vauban 	1633 	1707 	France 	Namur, 1692
+143 	Edward, the “Black Prince” 	1330 	1376 	England 	Poitiers, 1356
+144 	John Monash 	1865 	1931 	Australia 	St. Quentin, 1918
+145 	Douglas MacArthur 	1880 	1964 	USA 	Inchon, 1950
+146 	Giuseppe Garibaldi 	1807 	1882 	Italy 	Expedition of the Thousand, 1860
+147 	Aixin-Jueluo Xuanye (Kangxi Emperor) 	1654 	1722 	China (Qing Dynasty) 	Jao Modo, 1696
+148 	Ahuitzotl 	N/A 	1502 	Aztec 	Southern Expedition, 1494
+149 	Archduke Charles, Duke of Teschen 	1771 	1847 	Austria 	Aspern-Essling, 1809
+150 	William Tecumseh Sherman 	1820 	1891 	USA (Union) 	March to the Sea, 1864
+151 	Uesugi Kenshin 	1530 	1578 	Japan (Sengoku) 	Tedorigawa, 1577
+152 	Lin Biao 	1907 	1971 	China (Communist/PRC) 	Pingjin Campaign, 1948-1949
+153 	Hinmatoowyalahtqit “Chief Joseph” 	1840 	1904 	Nez Perce 	Nez Perce War, 1877
+154 	Richard I “Lionheart” 	1157 	1199 	England/Crusader 	Arsuf, 1191
+155 	Judar Pasha 	N/A 	1606 	Morocco 	Tondibi, 1591
+156 	Ariel Sharon 	1928 	2014 	Israel 	Abu-Ageila, 1967
+157 	Lucius Septimius Severus 	146 	211 	Rome 	Lugdunum, 197
+158 	Luis Alves de Lima e Silva, Duke of Caxias 	1803 	1880 	Brazil 	War of the Triple Alliance, 1866-1870
+159 	Wei Qing 	N/A 	106BC 	China (Han Dynasty) 	Mobei, 117 BC
+160 	Chormagan 	N/A 	1241 	Mongol 	Invasions of Armenia and Georgia, 1238
+161 	Ferdinand Foch 	1851 	1929 	France 	Hindenburg Line, 1918
+162 	Abbas I “the Great” 	1571 	1629 	Persia (Safavid Dynasty) 	Urmia, 1604
+163 	Sa’d ibn Abi Waqqas 	595 	674 	Arab/Rashidun Caliphate 	al-Qadisiyyah, 636
+164 	Minamoto no Yoshitsune 	1159 	1189 	Japan (Kamakura Shogunate) 	Ichi-no-Tani, 1184
+165 	Konstantin Rokossovsky 	1896 	1968 	Russia/Soviet Union 	Operation Bagration, 1944
+166 	Shihab ad-Din (Muhammad of Ghor) 	1149 	1206 	Tajik/Ghurid Empire 	Tarain II, 1192
+167 	John I Tzimiskes 	925 	976 	Byzantine 	Dorostolon, 971
+168 	Paul von Hindenburg 	1847 	1934 	Germany 	Tannenberg, 1914
+169 	Rajendra Chola I 	N/A 	1044 	Tamil (Chola Dynasty) 	Southeast Asian Expedition, 1025
+170 	Lennart Torstensson 	1603 	1651 	Sweden 	Jankau, 1645
+171 	Taksin 	N/A 	1782 	Siam 	Ratchaburi, 1774
+172 	Jose de San Martin 	1778 	1850 	Argentina 	Maipu, 1818`
+173 	Quintus Sertorius 	123BC 	72BC 	Roman (Populares) 	Baetis River, 80 BC
+174 	Kujula Kadphises 	4 BC 	80 	Kushan/Yuezhi 	Invasion of Northern India, 40
+175 	Ambrogio Spinola, 1st Marquis of the Balbases 	1569 	1630 	Spain 	Breda, 1624-1625
+176 	George Catlett Marshall 	1880 	1959 	USA 	World War II, 1939-1945
+177 	Akbar 	1542 	1605 	Mughal 	Chittorgarh, 1567-1568
+178 	Gwanggaeto “the Great” 	378 	413 	Korea (Goguryeo) 	War with Later Yan, 400
+179 	Modu (Maodun) Chanyu 	234BC 	174BC 	Xiongnu 	Baideng, 200 BC
+180 	Attila 	406 	453 	Huns 	Invasion of the Eastern Roman Empire, 443-445
+181 	Lucius Licinius Lucullus 	118BC 	56BC 	Rome 	Tigranocerta, 69 BC
+182 	Bertrand du Guesclin 	1320 	1380 	France 	Pontvallain, 1370
+183 	Qi Jiguang 	1528 	1588 	China (Ming Dynasty) 	Fujian Province, 1562-1563
+184 	Nathanael Greene 	1742 	1786 	USA 	Southern Campaign, 1780
+185 	Sargon II 	765BC 	705BC 	Assyria 	Babylon, 710 BC
+186 	Alexander Nevsky 	1221 	1263 	Russia (Novgorod) 	Lake Peipus (“Battle on the Ice”), 1242
+187 	Parmenion 	400BC 	330BC 	Macedon 	Gaugamela, 331 BC
+188 	Walter Model 	1891 	1945 	Germany 	Operation Market-Garden, 1944
+189 	Geronimo 	1829 	1909 	Apache 	The Reservation Breakout, 1885-1886
+190 	Piye (Piankhi) 	N/A 	714 BC 	Kushite 	Herakleopolis, 724 BC
+191 	Aleksei Alekseevich Brusilov 	1853 	1926 	Russia 	Brusilov Offensive, 1916
+192 	Seleucus I Nicator 	358BC 	281BC 	Macedon/Seleucid 	Ipsus, 301 BC
+193 	Zhou Yu 	175 	210 	China (Three Kingdoms-Eastern Wu) 	Red Cliff, 208
+194 	Mihai Viteazu (Michael the Brave) 	1558 	1601 	Wallachia/Romania 	Selimbar, 1599
+195 	Archibald Wavell, 1st Earl Wavell 	1883 	1950 	Great Britain 	Operation Compass, 1940
+196 	Jan Karol Chodkiewicz 	1560 	1621 	Poland-Lithuania 	Kirchholm, 1605
+197 	Flavius Aetius 	391 	454 	Rome 	Catalaunian Plains, 451
+198 	Louis-Joseph de Montcalm 	1712 	1759 	France 	Ticonderoga, 1758
+199 	Joseph Radetzky von Radetz 	1766 	1858 	Austria 	Novara, 1849
+200 	Wang Jian 	N/A 	223BC 	China (Qin Dynasty) 	Conquest of Chu, 224-223 BC
+201 	Eulji Mundeok 	N/A 	620 	Korea (Goguryeo) 	Salsu, 612
+202 	Edward III 	1312 	1377 	England 	Crecy, 1346
+203 	Yuan Chonghuan 	1584 	1630 	China (Ming Dynasty) 	Ningyuan, 1626
+204 	Naresuan (Sanphet II) 	1556 	1605 	Siam (Ayutthaya Kingdom) 	Bueng Nong Sarai, 1593
+205 	Prokop the Great 	1380 	1434 	Bohemian/Hussite 	Domazlice, 1431`
+206 	Mori Motonari 	1497 	1571 	Japan (Sengoku) 	Miyajima, 1555
+207 	Su Dingfang 	591 	667 	China (Tang Dynasty) 	Irtysh River, 657
+208 	Nathan Bedford Forrest 	1821 	1876 	USA (Confederate) 	Brice’s Cross Roads, 1864
+209 	Francesco I Sforza 	1401 	1466 	Italy/Mercenary (Milan) 	Caravaggio, 1448
+210 	Quizquiz 	N/A 	1534 	Inca 	Quipaipan, 1532
+211 	Bernard Montgomery, 1st Viscount Montgomery 	1887 	1976 	Great Britain 	El Alamein, 1942
+212 	Louis Joseph de Bourbon, Duke of Vendome 	1654 	1722 	France 	Villaviciosa, 1710
+213 	Alfred the Great 	849 	899 	England 	Edington, 878
+214 	Murong Ke 	N/A 	367 	China (Former Yan Kingdom) 	Defeat of Ran Min, 352
+215 	Ivan Stepanovich Konev 	1897 	1973 	Russia/Soviet Union 	Kursk, 1943
+216 	Charles X Gustav (Carl Gustav) 	1622 	1660 	Sweden 	Warsaw, 1656
+217 	Ramesses II (Ozymandias) 	1303BC 	1213BC 	Egypt (New Kingdom 	Qadesh, 1274 BC
+218 	Gebhard Leberecht von Blucher 	1742 	1819 	Prussia 	Katzbach, 1813
+219 	Radomir Putnik 	1847 	1917 	Serbia 	Kolubara, 1914
+220 	Koos de la Rey 	1847 	1914 	Boer 	Magersfontein, 1899
+221 	Marcus Claudius Marcellus 	268BC 	208BC 	Rome 	Syracuse, 214-212 BC
+222 	Sir Thomas Fairfax 	1612 	1671 	England (Parliamentarian) 	Naseby, 1645
+223 	Henry IV of France (Henry of Navarre) 	1553 	1610 	France (Huguenot) 	Ivry, 1590
+224 	Alexios I Komnenos 	1048 	1118 	Byzantine 	Philomelion, 1117
+225 	Ibrahim Pasha 	1789 	1848 	Egypt (Mamluk/Ottoman) 	Konya, 1832
+226 	Jeanne d’Arc 	1412 	1431 	France 	Orleans, 1429
+227 	Gerd von Rundstedt 	1875 	1953 	Germany 	Kiev, 1941
+228 	Fernando Alvarez de Toledo, Duke of Alba “Iron Duke” 	1507 	1582 	Spain 	Alcantara, 1580
+229 	Wolter von Plettenberg 	1450 	1535 	Livonian Order (Teutonic Knights) 	Siritsa River, 1501
+230 	James FitzJames, 1st Duke of Berwick 	1670 	1734 	France/English Exile 	Almanza, 1707
+231 	Mihira Bhoja I 	836 	885 	India (Gurjara Pratihara) 	Annexation of Bihar, 876?
+232 	Ana Nzinga 	1583 	1663 	Angola (Ndongo/Matamba) 	Kombi, 1647
+233 	Publius Cornelius Scipio Aemilianus 	185BC 	129BC 	Rome 	Carthage, 149-146 BC
+234 	Mahpiya Luta (Red Cloud) 	1822 	1909 	Lakota 	Red Cloud’s War, 1866-1868
+235 	Arthur Currie 	1875 	1933 	Canada 	Hill 70 (part of 3rd Ypres), 1917
+236 	Mukhali 	1170 	1223 	Mongol 	Conquest of Jin, 1217-1222
+237 	Leonhard Graf von Blumenthal 	1810 	1900 	Prussia 	Koniggratz/Sadowa, 1866
+238 	Hyder Ali 	1721 	1782 	Mysore 	First Anglo-Mysore War, 1767-1768
+239 	Eumenes 	362 BC 	316 BC 	Greek/Macedon 	Hellespont, 321 BC
+240 	Hizabruddin (Zafar Khan) 	N/A 	1299 	India (Delhi Sultanate) 	Sivistan, 1298
+241 	Ivan III Vasilyevich “the Great” 	1440 	1505 	Russia/Moscow 	Conquest of Novgorod, 1471
+242 	Ashurbanipal 	685 BC 	627 BC 	Assyria 	Conquest of Elam, 640-639 BC
+243 	Philip Henry Sheridan 	1831 	1888 	USA (Union) 	Cedar Creek, 1864
+244 	David IV “the Builder” 	1073 	1125 	Georgia 	Didgori, 1121
+245 	Michael Collins 	1890 	1922 	Ireland 	Irish War of Independence, 1919-1922
+246 	Ashikaga Takauji 	1305 	1358 	Japan (Ashikaga Shogunate) 	Minatogawa, 1336
+247 	Pyotr Rumyantsev 	1725 	1796 	Russia 	Kagul, 1770
+248 	Dorgon (Prince Rui) 	1612 	1650 	Manchu/China (Qing Dynasty) 	Shanhai Pass, 1644
+249 	Tomoyuki Yamashita 	1885 	1946 	Japan 	Malaya & Singapore, 1941-1942`
+250 	Tariq ibn Ziyad 	670 	720 	Arab/Umayyad Caliphate 	Guadalete, 711
+251 	Antigonus I Monophthalmus 	382BC 	301BC 	Macedon 	Gabiene, 316 BC
+252 	Murad II 	1404 	1451 	Ottoman 	Varna, 1444
+253 	Anawrahta Minsaw 	1014 	1077 	Burma (Pagan Empire) 	Thaton, 1057
+254 	Jozef Klemens Pilsudski 	1867 	1935 	Poland 	Warsaw, 1920
+255 	Simon Bolivar “El Libertador” 	1783 	1830 	Venezuela/New Granada 	Boyaca, 1819
+256 	Hermann (Arminius) 	18BC 	21 	Cherusci (Germanic) 	Teutoberg Forest, 9
+257 	Garnet Wolseley, 1st Viscount Wolseley 	1833 	1913 	Great Britain 	Tell El Kebir, 1882
+258 	Askia Mohammad I (Muhammad Ture) 	1443 	1538 	Songhai 	Anfao, 1493
+259 	Francisco Pizarro 	1471 	1541 	Spain 	Cajamarca, 1532
+260 	Zynoviy Bohdan Khmelnytsky 	1595 	1657 	Ukrainian/Cossack 	Batih, 1652
+261 	Yelu Dashi (Yeh-Lu Ta-Shih) 	1087 	1143 	Khitan/China (Qara Khitai) 	Qatwan, 1141
+262 	Alan Brooke, 1st Viscount Alanbrooke 	1883 	1963 	Great Britain 	World War II, 1939-1945
+263 	Jean-de-Dieu Soult 	1769 	1851 	France 	Ocana, 1809
+264 	Abdelkader ibn Muhieddine (El Djezairi) 	1808 	1883 	Algeria 	Macta, 1835
+265 	Ma Yuan 	14BC 	49 	China (Han Dynasty) 	Expeditions against the Qiang, 34-35
+266 	Albert Kesselring 	1885 	1960 	Germany 	Monte Cassino & Anzio, 1944
+267 	Johann Tserclaes, Count of Tilly 	1559 	1632 	Austria/Bavaria 	White Mountain, 1620
+268 	Sun Li-jen 	1900 	1990 	China (Nationalist/Kuomintang) 	Ledo Road, 1943-1944
+269 	Gaius Claudius Nero 	N/A 	200BC 	Rome 	Metaurus River, 207 BC
+270 	Abu Aamir al-Mansur (Almanzor) 	938 	1002 	Arab (Caliphate of Cordoba) 	Cervera, 1000
+271 	Eduard Totleben 	1818 	1884 	Russia 	Sevastopol, 1854-1855
+272 	Frederick Roberts, 1st Earl Roberts 	1832 	1914 	Great Britain 	Kandahar, 1880
+273 	Gnaeus Pompeius Magnus “Pompey” 	106BC 	48BC 	Rome (Optimates) 	Lycus, 66 BC
+274 	Lachit Borpukan 	1622 	1671 	India (Ahom Kingdom) 	Saraighat, 1671
+275 	Leonidas I 	N/A 	480BC 	Sparta 	Thermopylae, 480 BC
+276 	Matthew B. Ridgway 	1895 	1993 	USA 	Chinese Spring Offensive, 1951
+277 	Mithridates VI 	135BC 	63BC 	Pontus 	Zela, 67 BC
+278 	Muhi-ud-Din Muhammad (Aurangzeb) 	1618 	1707 	Mughal 	Samugarh, 1658
+279 	August von Mackensen 	1849 	1945 	Germany 	Gorlice-Tarnow, 1915
+280 	Shimazu Yoshihisa 	1533 	1611 	Japan (Sengoku) 	Mimigawa, 1578
+281 	Tecumseh 	1769 	1813 	Shawnee 	Tecumseh’s War, 1811-1813
+282 	Krum 	N/A 	814 	Bulgaria 	Pliska, 811
+283 	Peng Dehuai 	1898 	1974 	China (Communist/PRC) 	Second Phase Campaign, 1950
+284 	Louis-William, Margrave of Baden-Baden 	1655 	1707 	Austria 	Slankamen, 1691
+285 	Manius Curius Dentatus 	N/A 	270BC 	Rome 	Beneventum, 275 BC
+286 	Nabopolassar 	658BC 	605BC 	Babylon 	Nineveh, 612 BC
+287 	Cnut (Canute the Great) 	995 	1035 	Denmark/England 	Conquest of England, 1015-1016
+288 	Bairam Khan 	1501 	1561 	Mughal 	Panipat II, 1556
+289 	Matthias Corvinus (Matyas Hunyadi) 	1443 	1490 	Hungary 	Vienna, 1485
+290 	Sima Yan (Emperor Wu) 	236 	290 	China (Jin Dynasty) 	Conquest of Eastern Wu, 279-280
+291 	Jean Lannes 	1769 	1809 	France 	Tudela, 1808
+292 	Ernst Gideon von Laudon 	1717 	1790 	Austria 	Kunersdorf, 1759
+293 	Omar Bradley 	1893 	1981 	USA 	Rhineland, 1945
+294 	Vercingetorix 	82BC 	46BC 	Arverni (Gaul) 	Gergovia, 53 BC
+295 	Marcus Aurelius 	121 	180 	Rome 	Defeat of the Marcomanni, 172
+296 	Yitzhak Rabin 	1922 	1995 	Israel 	Six-Day War, 1967
+297 	Pyotr Bagration 	1765 	1812 	Russia/Georgia 	Schongrabern, 1805
+298 	Ismail I 	1487 	1524 	Persia (Safavid) 	Sarur, 1500
+299 	Meng Tian 	N/A 	210 BC 	China (Qin Dynasty) 	Creation of the Great Wall, 215 BC
+300 	John J. Pershing 	1860 	1948 	USA 	Meuse-Argonne, 1918 
