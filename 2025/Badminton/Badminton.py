@@ -121,11 +121,14 @@ def update_log_sheet():
     else:
         sheet.update(values=rows, range_name="A3")
 
+    print("Log sheet updated successfully")
+
 def build_processed_sheet():
     rows = []
     for player in sorted(
         players,
-        key = lambda p: (-1 * p.sessions_since_last_booking, p.bookings_per_session)
+        key = lambda p: (p.sessions_since_last_booking, -1 * p.bookings_per_session,   p.most_recent_booking),
+        reverse=True
     ):
         rows.append(
             [
@@ -147,6 +150,8 @@ def update_processed_sheet():
     rows = build_processed_sheet() 
     processed.update(values=rows, range_name="A2")
 
+    print("Processed sheet updated successfully")
+
 def print_rows():
     print(f"Date{" "*4}|Booked{" "*9}|Played")
 
@@ -160,6 +165,8 @@ def print_rows():
 
         print(f"{session.date}|{who_booked:15}|{who_played}")
 
+    print()
+
 def print_processed(rows: list):
     print(f"{" "*10}|{"Sessions".center(15)}|{"Sessions".center(15)}|{"Sessions since".center(15)}|{"Bookings per".center(15)}|{"Due to".center(10)}")
     print(f"{"Name".center(10)}|{"played".center(15)}|{"booked ".center(15)}|{"last booking".center(15)}|{"session".center(15)}|{"book?".center(10)}")
@@ -171,6 +178,8 @@ def print_processed(rows: list):
         print(f"{row[3]:14} |",end="")
         print(f"{row[4]:14} |",end="")
         print(f"{row[5]:>9}")        
+
+    print()
 
 def input_new_session():
     date = input("Date (dd/mm/yy): ")
@@ -202,22 +211,45 @@ def input_new_session():
     print()
     print_rows()
 
-
-read_from_sheet()
-print_rows()
-print()
-build_processed_sheet()
-print()
-
-input_new_session()
-build_processed_sheet()
-print()
-
-if input("Update spreadsheet? [y/n] ").lower() == "y":
+def new_session():
+    input_new_session()
+    build_processed_sheet()
     print()
-    update_log_sheet()
-    print("Log sheets updated successfully")
+    if input("Update spreadsheet? [y/n] ").lower() == "y":
+        print()
+        update_log_sheet()
+        print("Log sheets updated successfully")
+        print_rows()
+        print()
+        update_processed_sheet()
+        print("Processed sheet updated successfully")
+
+def main():
+    print("Pulling data from the spreadsheet...\n")
+    read_from_sheet()
     print_rows()
-    print()
-    update_processed_sheet()
-    print("Processed sheet updated successfully")
+    build_processed_sheet()
+
+    print("Update spreadsheet? [y/n]")
+    ipt = input().lower()
+    if ipt == "y":
+        update_log_sheet()
+        update_processed_sheet()
+
+    while True:
+        print()
+        print("Anything else?")
+        print("0 to exit")
+        print("1 to add session")
+        print("2 to edit session (WIP)")
+        
+        cmd = input()
+
+        if cmd == "0":
+            break
+        if cmd == "1":
+            new_session()
+
+if __name__ == "__main__":
+    main()
+    
