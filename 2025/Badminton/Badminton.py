@@ -4,12 +4,15 @@ import datetime
 from badminton_stuff.session import Session
 from badminton_stuff.participant import Participant
 
+
+print("Fetching data from Google Sheets...\n")
+
 scopes = [
     "https://www.googleapis.com/auth/spreadsheets",
     "https://www.googleapis.com/auth/drive"
 ]
 
-creds = Credentials.from_service_account_file(r"C:\Users\jamie\OneDrive\Desktop\Python\Badminton_API\credentials.json", scopes=scopes)
+creds = Credentials.from_service_account_file(r"C:\Users\jamie\OneDrive\Documents\Badminton\credentials.json.txt", scopes=scopes)
 client = gspread.authorize(creds)
 
 sheet = client.open("Badminton Session Log").worksheet("Log")
@@ -79,7 +82,7 @@ def update_player_attributes(session: Session):
         to_book = [
             player for player in sorted(
                 session.who_played,
-                key = lambda p: (-1 * p.sessions_since_last_booking, p.bookings_per_session)
+                key = lambda p: (-1 * p.sessions_since_last_booking, p.bookings_per_session),
             )
         ][:2]
         for player in to_book:
@@ -127,8 +130,7 @@ def build_processed_sheet():
     rows = []
     for player in sorted(
         players,
-        key = lambda p: (p.sessions_since_last_booking, -1 * p.bookings_per_session,   p.most_recent_booking),
-        reverse=True
+        key = lambda p: (-1* p.sessions_since_last_booking, p.bookings_per_session,   p.most_recent_booking)
     ):
         rows.append(
             [
@@ -225,7 +227,6 @@ def new_session():
         print("Processed sheet updated successfully")
 
 def main():
-    print("Pulling data from the spreadsheet...\n")
     read_from_sheet()
     print_rows()
     build_processed_sheet()
