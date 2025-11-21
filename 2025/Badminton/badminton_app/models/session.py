@@ -28,3 +28,5 @@ class Session:
         to_string += f"Players: {played}"
 
         return to_string
+    
+    
