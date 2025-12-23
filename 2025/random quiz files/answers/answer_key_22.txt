@@ -1,1 +1,50 @@
-test
+1. Massachusetts: c. Boston
+2. Michigan: d. Lansing
+3. Texas: d. Austin
+4. Nebraska: b. Lincoln
+5. Missouri: c. Jefferson City
+6. West Virginia: a. Charleston
+7. North Dakota: d. Bismarck
+8. Alabama: b. Montgomery
+9. Montana: d. Helena
+10. Arkansas: a. Little Rock
+11. Indiana: b. Indianapolis
+12. Vermont: c. Montpelier
+13. New Hampshire: d. Concord
+14. Rhode Island: d. Providence
+15. Arizona: c. Phoenix
+16. Ohio: c. Columbus
+17. Wisconsin: d. Madison
+18. Oregon: c. Salem
+19. Delaware: b. Dover
+20. North Carolina: a. Raleigh
+21. Colorado: d. Denver
+22. Idaho: d. Boise
+23. Kentucky: a. Frankfort
+24. South Carolina: d. Columbia
+25. Mississippi: c. Jackson
+26. Georgia: a. Atlanta
+27. New Jersey: b. Trenton
+28. Iowa: c. Des Moines
+29. Connecticut: c. Hartford
+30. Illinois: b. Springfield
+31. Hawaii: d. Honolulu
+32. South Dakota: b. Pierre
+33. Utah: b. Salt Lake City
+34. Maine: c. Augusta
+35. New York: d. Albany
+36. Pennsylvania: a. Harrisburg
+37. Florida: b. Tallahassee
+38. Maryland: c. Annapolis
+39. California: a. Sacramento
+40. Virginia: a. Richmond
+41. Nevada: b. Carson City
+42. Kansas: c. Topeka
+43. Minnesota: d. Saint Paul
+44. Oklahoma: a. Oklahoma City
+45. New Mexico: c. Santa Fe
+46. Wyoming: c. Cheyenne
+47. Louisiana: d. Baton Rouge
+48. Washington: a. Olympia
+49. Tennessee: c. Nashville
+50. Alaska: c. Juneau

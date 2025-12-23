@@ -1,10 +1,14 @@
 import re
 import random
 from pathlib import Path
+import os
+
+os.chdir(r"C:\Users\jamie\OneDrive\Documents\Python\misc-python-scripts\2025\random quiz files")
 
 # extract state-capital pairs from states.csv
 pattern = re.compile(r"^(.+?)\s\t(.+?)\s\t")
 states = {}
+
 with open("states.csv", "r", encoding="utf-8") as f:
     for line in f:
         if match := pattern.search(line.strip()):
@@ -16,7 +20,7 @@ answers = {}
 s = 42
 i = 0
 for state in states:
-    random.seed(i)                          # seed keeps pseudo-random sequences consistant 
+    random.seed(s)                          # seed keeps pseudo-random sequences consistant 
     r = list(range(0, 50))                  # generate indices of 50 states 
     r.pop(i)                                # remove currently selected state
     answer_indices = random.sample(r, 3)    # generate then ranomise list of 4 indices
@@ -32,16 +36,36 @@ for state in states:
     s += 1
 
 # generate 35 unique quizzes
-abcd = "ABCD"
+abcd = "abcd"
 
 for i in range(35):
+    random.seed(s)
     # generate paths for Q and A sheets
     p_q = Path("questions") / f"questions_{i+1:02d}.txt"
     p_a = Path("answers") / f"answer_key_{i+1:02d}.txt"
 
-    r_50 = random.shuffle(list(range(50)))
-    
-    
+    r_50 = list(range(50))
+    random.shuffle(r_50)
 
+    # writing Q files
+    question_number = 1
+    with open(p_q, "w", encoding="utf-8") as f:
+        for n in r_50:
+            state = list(questions.keys())[n] 
+            
+            f.write(f"{question_number}. {state}:\n")
+            for m in range(4):
+                f.write(f"{abcd[m]}. {questions[state][m]}\n")
+            f.write("\n")
+            question_number += 1
+    # writing A files
+    question_number = 1
     with open(p_a, "w", encoding="utf-8") as f:
-        
+        for n in r_50:
+            state = list(questions.keys())[n]
+            ABCD_answer, answer = answers[state]
+            ABCD_answer = abcd[ABCD_answer]
+            f.write(f"{question_number}. {state}: {ABCD_answer}. {answer}\n")
+            question_number += 1
+
+    s += 1
