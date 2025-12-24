@@ -1,9 +1,23 @@
+"""
+Random Quiz Generator.
+
+Generates 35x randomised multiple-choice quizes and corresponding answer keys.
+Each question is one of the US states and the choices contain the capital city and 3 other randomly-selected state capitals.
+All of the quizzes contain the same 50 questions, but in a randomised order. 
+Quizzes and answer keys are each saved to their own .txt files.
+"""
+
 import re
 import random
 from pathlib import Path
 import os
 
-os.chdir(r"C:\Users\jamie\OneDrive\Documents\Python\misc-python-scripts\2025\random quiz files")
+os.chdir(Path(os.getcwd()) 
+        / "misc-python-scripts" 
+        / "2025" 
+        / "Automate the Boring Stuff" 
+        / "Chapter 10 Reading and Writing Files" 
+        / "random quiz files")
 
 # extract state-capital pairs from states.csv
 pattern = re.compile(r"^(.+?)\s\t(.+?)\s\t")
