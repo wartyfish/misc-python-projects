@@ -1,0 +1,300 @@
+1. North Dakota:
+	a. Carson City
+	b. Providence
+	c. Concord
+	d. Bismarck
+
+2. Illinois:
+	a. Tallahassee
+	b. Springfield
+	c. Trenton
+	d. Salem
+
+3. South Carolina:
+	a. Lansing
+	b. Raleigh
+	c. Trenton
+	d. Columbia
+
+4. New Jersey:
+	a. Pierre
+	b. Trenton
+	c. Bismarck
+	d. Boston
+
+5. Wyoming:
+	a. Denver
+	b. Boise
+	c. Cheyenne
+	d. Harrisburg
+
+6. Minnesota:
+	a. Dover
+	b. Albany
+	c. Nashville
+	d. Saint Paul
+
+7. Alaska:
+	a. Little Rock
+	b. Richmond
+	c. Juneau
+	d. Annapolis
+
+8. Maryland:
+	a. Raleigh
+	b. Salem
+	c. Annapolis
+	d. Boise
+
+9. Mississippi:
+	a. Carson City
+	b. Bismarck
+	c. Jackson
+	d. Augusta
+
+10. Connecticut:
+	a. Lansing
+	b. Salem
+	c. Hartford
+	d. Atlanta
+
+11. West Virginia:
+	a. Charleston
+	b. Providence
+	c. Denver
+	d. Richmond
+
+12. Vermont:
+	a. Boston
+	b. Oklahoma City
+	c. Montpelier
+	d. Juneau
+
+13. Oregon:
+	a. Springfield
+	b. Hartford
+	c. Salem
+	d. Annapolis
+
+14. Hawaii:
+	a. Augusta
+	b. Charleston
+	c. Little Rock
+	d. Honolulu
+
+15. Tennessee:
+	a. Denver
+	b. Albany
+	c. Nashville
+	d. Trenton
+
+16. Iowa:
+	a. Salem
+	b. Montgomery
+	c. Des Moines
+	d. Albany
+
+17. Nevada:
+	a. Hartford
+	b. Carson City
+	c. Montpelier
+	d. Phoenix
+
+18. Arkansas:
+	a. Little Rock
+	b. Carson City
+	c. Augusta
+	d. Raleigh
+
+19. New York:
+	a. Dover
+	b. Baton Rouge
+	c. Bismarck
+	d. Albany
+
+20. Virginia:
+	a. Richmond
+	b. Springfield
+	c. Madison
+	d. Atlanta
+
+21. Idaho:
+	a. Pierre
+	b. Des Moines
+	c. Santa Fe
+	d. Boise
+
+22. Utah:
+	a. Columbia
+	b. Salt Lake City
+	c. Richmond
+	d. Springfield
+
+23. Florida:
+	a. Raleigh
+	b. Tallahassee
+	c. Jefferson City
+	d. Augusta
+
+24. Oklahoma:
+	a. Oklahoma City
+	b. Springfield
+	c. Frankfort
+	d. Boston
+
+25. Michigan:
+	a. Augusta
+	b. Trenton
+	c. Frankfort
+	d. Lansing
+
+26. Montana:
+	a. Sacramento
+	b. Carson City
+	c. Dover
+	d. Helena
+
+27. Maine:
+	a. Harrisburg
+	b. Boston
+	c. Augusta
+	d. Annapolis
+
+28. Indiana:
+	a. Springfield
+	b. Indianapolis
+	c. Denver
+	d. Atlanta
+
+29. Kentucky:
+	a. Frankfort
+	b. Indianapolis
+	c. Providence
+	d. Springfield
+
+30. Alabama:
+	a. Tallahassee
+	b. Montgomery
+	c. Nashville
+	d. Phoenix
+
+31. Pennsylvania:
+	a. Harrisburg
+	b. Saint Paul
+	c. Atlanta
+	d. Concord
+
+32. New Hampshire:
+	a. Richmond
+	b. Dover
+	c. Augusta
+	d. Concord
+
+33. Georgia:
+	a. Atlanta
+	b. Salem
+	c. Frankfort
+	d. Bismarck
+
+34. Colorado:
+	a. Jackson
+	b. Sacramento
+	c. Concord
+	d. Denver
+
+35. Wisconsin:
+	a. Indianapolis
+	b. Richmond
+	c. Denver
+	d. Madison
+
+36. Delaware:
+	a. Carson City
+	b. Dover
+	c. Jackson
+	d. Sacramento
+
+37. Arizona:
+	a. Oklahoma City
+	b. Columbus
+	c. Phoenix
+	d. Carson City
+
+38. Massachusetts:
+	a. Harrisburg
+	b. Sacramento
+	c. Boston
+	d. Boise
+
+39. North Carolina:
+	a. Raleigh
+	b. Bismarck
+	c. Pierre
+	d. Dover
+
+40. Washington:
+	a. Olympia
+	b. Helena
+	c. Lansing
+	d. Springfield
+
+41. Texas:
+	a. Phoenix
+	b. Augusta
+	c. Charleston
+	d. Austin
+
+42. California:
+	a. Sacramento
+	b. Denver
+	c. Phoenix
+	d. Lincoln
+
+43. Ohio:
+	a. Jefferson City
+	b. Jackson
+	c. Columbus
+	d. Trenton
+
+44. South Dakota:
+	a. Albany
+	b. Pierre
+	c. Atlanta
+	d. Raleigh
+
+45. Louisiana:
+	a. Denver
+	b. Austin
+	c. Des Moines
+	d. Baton Rouge
+
+46. New Mexico:
+	a. Sacramento
+	b. Madison
+	c. Santa Fe
+	d. Columbia
+
+47. Nebraska:
+	a. Santa Fe
+	b. Lincoln
+	c. Richmond
+	d. Madison
+
+48. Kansas:
+	a. Providence
+	b. Jefferson City
+	c. Topeka
+	d. Phoenix
+
+49. Rhode Island:
+	a. Baton Rouge
+	b. Columbus
+	c. Helena
+	d. Providence
+
+50. Missouri:
+	a. Sacramento
+	b. Concord
+	c. Jefferson City
+	d. Annapolis
+
