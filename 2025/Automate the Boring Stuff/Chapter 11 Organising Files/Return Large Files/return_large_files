@@ -10,11 +10,16 @@ def return_large_files(target, threshold):
         raise ValueError(f"{target} is not valid directory")
     
     for file_path in p.rglob("*"):
-        if os.path.getsize(file_path) > threshold:
-            print(file_path)
-            print(f"{os.path.getsize(file_path) / 10 ** 9:.2f} GB")
+        try:
+            stat = file_path.stat()
+            if file_path.is_file() and stat.st_size > threshold:
+                size_gb = stat.st_size / 10**9
+                print(file_path)
+                print(f"{size_gb:.2f} GB")
+        except (FileNotFoundError, PermissionError):
+            continue
 
 
-target = Path.home()
+target = Path(r"C:\\")
 threshold = 10 ** 9
 return_large_files(target, threshold)
