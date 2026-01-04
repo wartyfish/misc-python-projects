@@ -1,4 +1,11 @@
-import os, shutil
+"""
+Close gaps
+
+make_gaps function populates "Files" directory with numerically names "spamXXX.txt" files, with specified gaps in file numbers.
+ 
+"""
+
+import os, shutil, re
 from pathlib import Path
 
 def make_gaps(target):
@@ -13,34 +20,24 @@ def make_gaps(target):
 
 def fill_gaps(target):
     p = Path(target)
+    pattern = re.compile(r"spam(\d{3}).txt")
 
-    def file_plus_one(file):
-        file_no = int(file.name.strip("spam").strip(".txt"))
-        return f"spam{file_no+1:03d}.txt"
-
-    def find_next_file(file):
-        next_file = p / file_plus_one(file)
-        if os.path.isfile(next_file):
-            return next_file
-        else:
-            return find_next_file(next_file)
-
-    number_of_files = len([f for f in p.iterdir()])
-    print(number_of_files)
+    # populate dict that indexes filenumbers
+    indexed_files = {}
     i = 0
-    while True:
-        if i == number_of_files:
-            break
-        for f in p.iterdir():
-            i += 1
-            if i == number_of_files:
-                break
-            f_plus_one = p / file_plus_one(f)
-            if not os.path.isfile(f_plus_one):
-                next_found_file = find_next_file(f)
-                os.rename(next_found_file, f_plus_one)
-                i = 0
-                break
+    for f in p.iterdir():
+        file_index = f"{i:03d}"
+        valid = re.match(pattern, f.name)
+        if valid:
+            indexed_files[file_index] = f
+        i += 1
+    
+    # identify files that need to be renamed and then do so
+    for i in indexed_files:
+        if i != re.match(pattern, indexed_files[i].name).group(1):
+            new_name = re.sub(r"\d{3}", i, indexed_files[i].name)
+            print(f"{indexed_files[i].name} renamed to {new_name}")
+            os.rename(indexed_files[i], p / new_name)
 
 def delete_files(target):
     p = Path(target)
