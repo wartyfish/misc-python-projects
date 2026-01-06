@@ -3,7 +3,7 @@ ZIP snapshot generator.
 
 Program backs-up selected folder to a new ZIP folder each time it's run.
 """
-import os, zipfile
+import os, zipfile, re
 from pathlib import Path
 
 def compress_to_zip(folder_name, target_dir):
