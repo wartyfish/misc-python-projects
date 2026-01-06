@@ -104,7 +104,7 @@ def main():
             )
             sys.exit(1)
 
-    logger.info("Vault snapshot task finished")
+    logger.info("Vault snapshot task finished\n")
     notify(
     "Vault Snapshot tast finished successfully",
     completion_message
@@ -116,7 +116,7 @@ except Exception as e:
     logger.exception("Snapshot failed; program encountered an unforeseen error")
     notify(
         "Vault Backup Failed",
-        f"Program encountered an unforeseen error:\n{e}"
+        f"Program encountered an unforeseen error:\n{e}\n"
     )
     sys.exit(1)
 
