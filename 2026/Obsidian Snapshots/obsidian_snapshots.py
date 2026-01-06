@@ -36,7 +36,7 @@ def validate_destination_path(destination_path) -> None:
         raise
 
 def main():
-    logger.info("Vault snapshot task started")
+    logger.info("\nVault snapshot task started")
     completion_message = ""
 
     target_path = Path(r"C:\Users\Eem\Dropbox\Jamies Vault")
@@ -104,7 +104,7 @@ def main():
             )
             sys.exit(1)
 
-    logger.info("Vault snapshot task finished\n")
+    logger.info("Vault snapshot task finished")
     notify(
     "Vault Snapshot tast finished successfully",
     completion_message
@@ -116,7 +116,7 @@ except Exception as e:
     logger.exception("Snapshot failed; program encountered an unforeseen error")
     notify(
         "Vault Backup Failed",
-        f"Program encountered an unforeseen error:\n{e}\n"
+        f"Program encountered an unforeseen error:\n{e}"
     )
     sys.exit(1)
 
