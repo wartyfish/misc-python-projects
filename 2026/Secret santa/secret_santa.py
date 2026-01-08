@@ -1,13 +1,13 @@
 import random
 
-def pull_from_hat(participants: list, excluded_pairs: dict = None) -> dict:
-    derangement_factor = random.randrange(1, len(participants))
+def derange_group(my_list: list) -> dict:
+    derangement_factor = random.randrange(1, len(my_list))
     participants_deranged = []
-    for i in range(len(participants)):
-        j = (i + derangement_factor) % len(participants)
-        print(participants[j])
-    print(derangement_factor)
-    print(participants_deranged)
+    for i in range(len(my_list)):
+        j = (i + derangement_factor) % len(my_list)
+        participants_deranged.append(my_list[j])
+
+    return dict(zip(my_list, participants_deranged))
         
 def define_groups(my_list) -> list:
     random.shuffle(my_list)
@@ -48,6 +48,25 @@ def print_distribution(my_list, iterations) -> None:
         print(f"Group size {n:2}: {"x"*int(round((int(distribution[n])/100)))}")
 
 
+###
+
+def pull_from_hat(participants: list) -> dict:
+    groups = define_groups(participants)
+    draw = {}
+
+    def merge_two_dicts(x, y):
+        z = x.copy()
+        z.update(y)
+        return z
+
+    for group in groups:
+        group_paired = derange_group(define_groups(group))
+        
+        merge_two_dicts(draw, group_paired)
+
+    return draw
+
+###
 
 
 participants = ["Alice", "Bob", "Charlie", "David", "Emma", "Frank", "Gabriel", "Hannah", "Imogen", "Jamie", "Kate",
@@ -59,12 +78,8 @@ disallowed["Alice"] = ["Bob", "David"]
 disallowed["Bob"]   = ["Alice", "David"]
 disallowed["David"] = ["Alice", "Bob"]
 
-group_size = 3
+group_size = 10
 participants = participants[:group_size]
 
-pull_from_hat(participants)
-
-iterations = 10000
-distribution = group_size_frequencies(participants, iterations)
-
+print(pull_from_hat(participants))
 
